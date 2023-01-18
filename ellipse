@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Ellipse</title>
+    </head>
+
+    <body>
+
+        <h1>Ellipse</h1>
+
+        <img src="images/Ellipse/Ellipse.png" height="200px" />
+
+        <br /><br />
+
+        <b>Definition.</b>
+        <i>A Ellipse is a plane curve that is mirror </i>
+        <br /><br />
+    
+        <hr />
+        <h2>Ellipse Properties</h2>
+        <ul>
+            <li>
+                Has it's symmetry mirrored on each side;
+            </li>
+            <br />
+            <li>
+                Subsequently, a concave or convex shape is formed depending on the orientation; 
+            </li>
+            <br />
+            <li>
+                It's most extreme-bound point is known as the <b>apex</b>;
+            </li>
+            <br />
+        </ul>
+
+        <hr />
+
+        <h2>Cool Facts</h2>
+
+        <h3>Salmon's Theorem</h3>
+
+        <img src="images/ellipse/salmons.svg" height="200px" />
+
+        <h3>Tschirnhausen Cubic Pedal Curve</h3>
+        
+        <img src="images/Ellipse/Cubicpedal.svg" height="200px" />
+
+        <hr />
+
+        <h2>External Links</h2>
+        
+        <ol>
+            <li><a href="https://mathworld.wolfram.com/Ellipse.html">Ellipse on Wolfram</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Ellipse">Ellipse on Wikipedia</a></li>
+        </ol>
+
+        <br />
+        <hr />
+
+        <a href="Homepage.html">Back to landing page</a>
+    </body>
+</html>

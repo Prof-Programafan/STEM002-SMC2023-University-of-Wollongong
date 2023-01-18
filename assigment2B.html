@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Name Page</title>
+
+        <style>
+            body {
+                font-family: Verdana, sans-serif;
+                font-size: 100%;
+                border-spacing:0;
+                border-collapse:collapse;
+            }
+        </style>
+
+        <script>
+            
+            function getName(){
+                //get element
+                var name = document.getElementById("nameField");
+
+                //extract the text
+                var inputname = name.value;
+
+                var q = document.getElementById("NW");
+                q.innerHTML = inputname;
+
+                var cell = document.getElementById("NE");
+	            cell.innerHTML = "";
+                var c2 = document.getElementById("SE");
+	            c2.innerHTML = "";
+                var c3 = document.getElementById("SW");
+	            c3.innerHTML = "";
+            }
+
+            function NW2NE(){
+                // left to right
+                var e = document.getElementById("nameField");
+                var name = e.value;
+                var q = document.getElementById("NE");
+                q.innerHTML = name
+                var cell = document.getElementById("NW");
+	            cell.innerHTML = "";
+            }
+
+            function NE2SE(){
+                // right to right
+                var e = document.getElementById("nameField");
+                var name = e.value;
+                var q = document.getElementById("SE");
+                q.innerHTML = name
+                var cell = document.getElementById("NE");
+	            cell.innerHTML = "";
+            }
+
+            function SE2SW(){
+                // right to left
+                var e = document.getElementById("nameField");
+                var name = e.value;
+                var q = document.getElementById("SW");
+                q.innerHTML = name
+                var cell = document.getElementById("SE");
+	            cell.innerHTML = "";
+            }
+
+            function SW2NW(){
+                //left to left
+                var e = document.getElementById("nameField");
+                var name = e.value;
+                var q = document.getElementById("NW");
+                q.innerHTML = name
+                var cell = document.getElementById("SW");
+	            cell.innerHTML = "";
+            }
+
+
+        </script>
+
+    </head>
+
+    <body>
+
+        Enter your name here:
+        <input id="nameField" type="text" />
+        <button onClick="getName()">
+            Move name to table
+        </button>
+        <br/><br/>
+        <div id="0">
+        </div>
+
+        <table border="5" style="width:100%" height="200px">
+            <tr>
+            <!--USE DIV OR SPAN instead of Tds -->
+
+              <td id="NW" onClick="NW2NE()" style="color:blue">North West</td>
+              
+              <td id="NE" onClick="NE2SE()" style="color:yellow">North East</td> 
+            </tr>
+            <tr>
+              <td id="SW" onClick="SW2NW()" style="color:rebeccapurple">South West</td>
+              <td id="SE" onClick="SE2SW()" style="color:black">South East</td>
+            </tr>
+          </table>
+        
+    </body>
+
+</html>

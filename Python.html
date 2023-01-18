@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Python Day</title>
+        <style>
+            body {
+                font-family: 'Verdana';
+                background-image: url(img/py.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: cover;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color:rgb(241, 179, 8)">Python Week</h1>
+        <center>
+            <a href="website.html">
+            <img src="img/h5.png" height="200px"/>
+        </a>
+        </center>
+        <br/>
+
+        <b>Summary.</b>
+        <i>
+        <li>Python like Javascript is a full-on programming language that makes programs particularly on the backend.</li>
+        <li>An example of Python would be searching a YouTube video through inputted keywords and running a javascript function to run the Python result API</i></li>
+        <br/><br/>
+
+        <hr/>
+        <h2>Run down of Python</h2>
+        <ul>
+            <li>The entire html document is specified by the HTML DOCTYPE Declaration</li>
+            <br/><br/>
+            <li>lt;HTML&gt; starts off the contents inside the webpage and closes by the "&lt;/HTML&gt;" tag. Information in them forms the element of a webpage</li>
+            <br/><br/>
+            <li>Through these demonstrations, brackets &lt;&gt; are mostly place to replicate HTML entity brackets </li>
+            <br/><br/>
+
+        </ul>
+                <li>We must start off by establishing the container metadata of the webpage using the &lt;HEAD&gt; element, in which the browser will use.</li>
+                <br/><br/>
+                <li>We are then able to input CSS properties through &lt;style&gt; tags that affect the body content as well as Javascript functions.</li>
+                <br/><br/>
+                <li>Afterwards we open and close &lt;Body&gt; tags to establish the Body element, allowing content to be displayed in the browser.</li>
+                <br/><br/>
+            </ul>
+            
+        <ul>
+            <li>We made tables that allowed text and media to be filled in them. We start off by opening the &lt;table&gt; element in which we define the alignment, dimensions and borders as shown below/</li>
+            <br/><br/>
+            <li> &lt;table border="0" which specifies the size of borders align="center" which positions the table within the page&gt;</li>
+            <br/><br/>
+            <li>&lt;tr&gt; elements would follow for every cell row there is, opened and closed off by its &lt;tr&gt;&lt;/tr&gt; tags</li>
+            <br/><br/>
+            <li>For each column, &lt;td&gt; elements are applied which in them can have information for displaying media such as images or text. Automatically the cell is adjusted for new text.</li>
+            <br/><br/>
+            <img src="img/Screen Shot 2023-01-15 at 4.16.10 pm.png" height="200px">
+        </ul>
+
+        <ul>
+            <li>Speaking of images, &lt;img&gt; elements are used to display them, which works similar to table elements</li>
+            <br/><br/>
+            <li >&lt;img src="file name.fmt/directory" height="<i>measured in pixels</i>"</li>
+            <br/><br/>
+            <li>Files are loaded from the same folder the HTML file is loaded, so if there isn't, the complete directory should be inputted for the browser to understand and load</li>
+            <br/><br/>
+            <li>Hyperlinks to webpages within your local storage or external websites are possible thanks to the <i>a href</i> attribute</b></li>
+            For example:
+            <li>&lt;A Href="name.html/external URL"&gt;</li>
+            Between such elements allows text to be written whilst being interactive.
+        </ul>
+        <hr/>
+        <br/><br/>
+<p>
+        print("hello world")
+
+        x = 5
+        
+        firstName = "Joseph"
+        
+        y=10
+        lastName="tonien"
+        z = x+y
+        print(z)
+        #prints the variable Z
+        
+        
+        fullName = (firstName +" "+ lastName)
+        print(fullName)
+        
+        x = 5
+        y = 10
+        t = 50
+        
+        x = y
+        y = t
+        t = x
+        
+        print(t)
+        print(t)
+        print(x)
+        print("x="+ str(x))
+        print("y="+ str(y))
+        print("z="+ str(z))
+        
+        print("x={0}".format(x))
+        print("x={0}, y = {1}, t={2}".format(x,y,t))
+        print("{0} {0} black {1} have you {2} {3}?".format("bah", "sheep", "any", "wool"))
+        print("{3} {0} {1} {2} a {1}chuck {4}...".format("much", "wood", "would", "how", "chuck"))
+        #prints what does the variable indicates
+        print("my name is {0} {1}".format(firstName, lastName))
+        print("my name is {0} {1}".format("joseph", "tonien"))
+        #prints string by the double quotes
+        print("my name is {0}{1}".format("firstName", "lastName"))
+        
+        a=5
+        b=7
+        c=9
+        d=11
+        e=13
+        
+        aSave=a
+        bSave=b
+        cSave=c
+        dSave=d
+        eSave=e
+        
+        a = bSave
+        b = cSave
+        c = aSave
+        
+        print("a={0}, b={1}, c={2}, d={3}, e={4}".format(a,b,c,d,e))
+        
+        firstName=input("Please enter your first name:")
+        lastName=input("Enter last name:")
+        print("Hi {0} {1} !".format(firstName, lastName))
+        
+        #ask user for 3 integers
+        
+        input1=input("Please enter 1st integer: ")
+        number1=int(input1)
+        
+        input2=input("Please enter 2nd integer: ")
+        number2=int(input2)
+        
+        input3=input("Please enter 3rd integer: ")
+        number3=int(input3)
+        #display the sum equation
+        sum= number1*number2+number2*number3+number3*number1
+        print("{0}x{1}+{1}x{2}+{2}x{0}={3}".format(number1, number2, number3, sum))
+        
+        # example: 10+2+7=19
+        
+        #budget=$100
+        #lunchbox = $13
+        #how many =7
+        #left over = $9
+        
+        # ask user to enter budget
+        budgetInput=input("Enter the budge: ")
+        budget=int(budgetInput)
+        
+        # ask user to enter price of lunchbox
+        priceInput=input("Enter unit price: ")
+        price = int(priceInput)
+        
+        # calculate how many boxes can we buy
+        #s1
+        boxcount=int(budget / price)
+        
+        #s2boxcount=budget//price
+        print("boxCount={0}".format(boxcount))
+        # calculate leftover money
+        leftover=budget-price*boxcount
+        #display info.. how many box, leftover
+        print("We can buy {0} boxes, and leftover money is ${1}".format(boxcount, leftover))
+        
+        #solve the quadratic equation a x^2+bx+c=0
+        #oelta=b^2-4ac
+        #(-b+-sqrt(delta))/(2a)
+        
+        #ask user to enter a
+        aInput=input("Please enter a: ")
+        a = int(aInput)
+        
+        #ask user to enter a
+        bInput=input("Please enter b: ")
+        b = int(bInput)
+        
+        #ask user to enter a
+        cInput=input("Please enter c: ")
+        c = int(cInput)
+        
+        #display("Quadratic equation:)
+        if (b>0):
+            sign1=" + "
+            bAbs= b
+            var1=" X"
+        elif (b==0):
+            sign1=""
+            bAbs =""
+            var1=""
+        else:
+            sign1 =" - "
+            bAbs = -b
+            var1 = " X"
+            
+        
+        if (c> 0):
+            sign2 = "+"
+            cAbs=c
+        elif (c==0):
+            sign2=""
+            cAbs=""
+        else:
+            sign2="-"
+            cAbs= -c
+        
+        
+        print("Quadratic equation: {0} X^2{1}{2}{5} {3} {4} = 0".format(a, sign1, bAbs, sign2, cAbs, var1))
+        
+        #solve
+        delta = b*b - 4*a*c
+        delta = b**2 - 4*a*c
+        print("delta = {0}".format(delta))
+        if (delta < 0):
+            print("No Solutions")
+        elif (delta == 0):
+            root = -b/(2*a)
+            print("One Solution: {0}".format(root))
+        else:
+            root1 = (-b + delta**.5)/(2*a)
+            root2 = (-b - delta**.5)/(2*a)
+            print("Two solution: {0} and {1}".format(root1, root2))
+        
+        binary = input("Enter a binary number: ")
+        length = len(binary)
+        print("This number has {0} digits".format(length))
+        
+        base=1
+        result=0
+        
+        for i in range(1,length+1):
+            digit = int(binary[length-i])
+            product = base*digit
+            result=result+product
+            print("id={4}, digit={0}, base={1}, product={2}, result={3}".format(digit, base, product, result))
+            base = base * 2
+            print("The result is {0}".format(result))
+        
+        #translate to decimal
+        
+        print("{0} {0} black sheep, {1} {2} any {3}?".format("bah", "has", "you", "wool"))
+        drink=input("Enter your favourite drink: ")
+        print(drink)
+        
+        rateInput=input("Enter the interest rate: ")
+        rate=float(rateInput)
+        print(rate)
+        
+            #ask user for 3 decimal numbers
+        #2.3^2 + 4.5^2 + 1.1^2
+        #=5.29+20.25+1.21
+        #=26.75
+        
+        print("Enter three decimal numbers")
+        
+        n1input= input("1st number: ")
+        n1=float(n1input)
+        n2input= input("2nd number: ")
+        n2=float(n2input)
+        n3input= input("3rd number: ")
+        n3=float(n3input)
+        
+        print("n1={0}, n2={1}, n3={2}".format(n1,n2,n3))
+        
+        #equations
+        #2.3^2 + 4.5^2 + 1.1^2
+        #5.29 + 20.25 + 1.21
+        #26.75
+        
+        s1=n1*n1
+        s2=n2**2
+        s3=n3**2
+        
+        print("{0}^2 + {1}^2 + {2}^2".format(n1, n2, n3))
+        print("={0} + {1} + {2}".format(s1, s2, s3))
+        
+        for num in range(12, 30):
+            result = num*num
+            print("{0} x {0} = {1}".format(num, result))
+        
+        while True:
+            something = input("Enter something silly (or QUIT to STOP): ")
+        
+            if (something == "QUIT"):
+                break
+            exit()
+            <//p>
+
+    <a href="website.html">Back to homepage</a>
+    </body>
+</html>
