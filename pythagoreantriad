@@ -1,0 +1,21 @@
+#getnum1
+
+num1=int(input("Please enter an odd number: "))
+
+if (num1 % 2) == 0:
+    print("This is an even number of {0}. Restart the program as odd numbers are only.".format(num1))
+else:
+
+#get n2 by squaring n1
+    n1=int(num1)
+    n2=int(n1*n1/2)
+
+#get n3 by finding its closest integers
+    n3=int(n2+0.5)
+    n4=int(n2+1.5)
+
+#im not sure why n3 has to be +0.5. Logically that would give me a result of 25 if I put 7
+#If I did it results in 23. Can you pls explain why this occurs?
+
+#print result
+    print("The corresponding Pythagorean triad is ({0},{1},{2}).".format(n1, n3, n4))
